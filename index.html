@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Cheron's Weather App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <section class="location">
+                <div class="city">Fort Hays, KS</div>
+                <div class="date"></div>
+            </section>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Enter a city or zip..." />
+        </header>
+        <main>
+            <div class="today">
+                <div class="weather">Sunny</div>
+                <div><img id="icon" src="http://openweathermap.org/img/wn/01d@2x.png"></div>
+                <div class="temp">15<span>°F</span></div>
+                <div class="hi-low">Hi: 13°F - Low: 16°F</div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

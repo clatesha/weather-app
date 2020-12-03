@@ -1,0 +1,102 @@
+
+$font-stack: 'Lora', serif;
+$font-color: black;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: $font-stack;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("weather5.jpg");
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+header input {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px 10px;
+    outline: none;
+    border: none;
+    margin: 5px 20px 20px;
+    background-color: rgb(245, 239, 239);
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 6px solid white;
+    color: rgba(0, 0, 0, 0.966);
+    font-size: 20px;
+    font-weight: 450;
+    transition: 0.2s ease-out;
+
+    :focus {
+        background-color: white;
+      }
+}
+
+main {
+    display: flex;
+    flex: 100%;
+    padding: 20px 20px 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.location {
+    padding: 25px 5px;
+    padding-bottom: 15px;
+    margin: 10px;
+    font-size: 102px;
+    font-weight: 900;
+
+    .city {
+        font-size: 35px;
+        margin: 10px;
+        color: $font-color;  
+      }
+
+      .date {
+        font-size: large;
+        margin: 5px 0px 0px 0px;
+        color: $font-color;
+        font-size: 20px;
+      }
+    }
+
+    .today {
+        .weather {
+            color: $font-color;
+            font-size: 32px;
+            font-weight: 1000;
+            font-style: italic;
+            margin-bottom: 15px;
+          }
+
+          .temp {
+            color: $font-color;
+            font-size: 102px;
+            font-weight: 900;
+            margin: 30px 0px;
+
+            span {
+                font-weight: 500;
+              }
+          }
+          .hi-low {
+            color: $font-color;
+            font-size: 30px;
+            font-weight: 500;
+          }
+    }
+    
+   
